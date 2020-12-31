@@ -14,6 +14,7 @@ module.exports = {
             {text: '首页', link: '/'},
             {text: '前端', link: '/web/'},
             {text: '后端', link: '/server/'},
+            {text: '杂记', link: '/myNotes/'},
             {text: 'External', link: 'https://google.com'},
             {
                 text: 'Languages',
@@ -43,11 +44,6 @@ module.exports = {
                         },
                     ]
                 },
-                {
-                    title: 'Group 2',
-                    children: [ /* ... */],
-                    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-                }
             ],
 
             '/server/': [
@@ -66,7 +62,19 @@ module.exports = {
                     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
                 }
             ],
-
+            '/myNotes/': [
+                {
+                    title: '杂记',
+                    path: '',
+                    initialOpenGroupIndex: 0, // 可选的, 默认值是 0
+                    children: [
+                        {
+                            title: 'git 常用命令',
+                            path: '/myNotes/git/',
+                        },
+                    ]
+                }
+            ],
             // fallback
             '/': [
                 '',        /* / */
@@ -83,6 +91,7 @@ module.exports = {
             }
         }
     },
+    plugins: [['vuepress-plugin-code-copy', true]]
     // plugins: {
     //     "vuepress-plugin-auto-sidebar": {}
     // }

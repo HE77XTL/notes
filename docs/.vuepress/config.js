@@ -44,6 +44,30 @@ module.exports = {
                         },
                     ]
                 },
+                {
+                    title: '管理系统模板（react）',   // 必要的
+                    path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                        {
+                            title: '介绍',
+                            path: '/web/ds-react-manage/',
+                        },
+                        {
+                            title: 'webpack配置修改',
+                            path: '/web/ds-react-manage/react-app-rewired/',
+                        },
+                        {
+                            title: '多语言',
+                            path: '/web/ds-react-manage/i18n/',
+                        },
+                        {
+                            title: 'Ant Design',
+                            path: '/web/ds-react-manage/antDesign/',
+                        },
+                    ]
+                },
             ],
 
             '/server/': [
@@ -64,16 +88,21 @@ module.exports = {
             ],
             '/myNotes/': [
                 {
-                    title: '杂记',
-                    path: '',
-                    initialOpenGroupIndex: 0, // 可选的, 默认值是 0
+                    title: 'Bit 组件管理',   // 必要的
+                    path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
                     children: [
                         {
-                            title: 'git 常用命令',
-                            path: '/myNotes/git/',
+                            title: '介绍',
+                            path: '/web/bit/',
+                        },
+                        {
+                            title: '安装',
+                            path: '/web/bit/install/',
                         },
                     ]
-                }
+                },
             ],
             // fallback
             '/': [

@@ -66,6 +66,34 @@ module.exports = {
                             title: 'Ant Design',
                             path: '/web/ds-react-manage/antDesign/',
                         },
+                        {
+                            title: '路由',
+                            path: '/web/ds-react-manage/router/',
+                        },
+                    ]
+                },
+                {
+                    title: 'react native',   // 必要的
+                    path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                        {
+                            title: '笔记',
+                            path: '/web/react-native/',
+                        },
+                    ]
+                },
+                {
+                    title: 'Vite 文档',   // 必要的
+                    path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                        {
+                            title: 'why Vite',
+                            path: '/web/vite/whyVite/',
+                        },
                     ]
                 },
             ],

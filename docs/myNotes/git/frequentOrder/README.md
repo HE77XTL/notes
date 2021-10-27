@@ -10,10 +10,7 @@ git push -u origin master
 git remote set-url origin url
 ````
 
-#### 版本号
-````
-git remote set-url origin url
-````
+
 
 #### 当前分支名
 ````
@@ -21,8 +18,5 @@ git symbolic-ref --short -q HEAD
 ````
 
 
-feature/YLGUOJI-2127
-
-release/YLGUOJI-2127
 
 

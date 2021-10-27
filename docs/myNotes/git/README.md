@@ -5,7 +5,7 @@ git remote add origin url
 git push -u origin master
 ````
 
-#### 添加远测仓库
+#### 设置远测仓库
 ````
 git remote set-url origin url
 ````
@@ -27,6 +27,7 @@ yarn config get registry  // 查看yarn当前镜像源
 yarn config set registry https://registry.npm.taobao.org/  // 设置yarn镜像源为淘宝镜像
 
 `````
+
 
 
 #### react 中实现类似vue 的 keep alive 的功能 ，思路备注
@@ -78,3 +79,4 @@ netstat -ano
 
 
 
+git remote set-url origin http://dongshenghe_d@bitbucket.caih.local/scm/cattcttp/tt-platform-web.git

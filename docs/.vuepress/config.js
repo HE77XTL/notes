@@ -21,7 +21,6 @@ module.exports = {
                 ariaLabel: 'Language Menu',
                 items: [
                     {text: 'Chinese', link: '/language/chinese/'},
-                    {text: 'Japanese', link: '/language/japanese/'}
                 ]
             }
         ],
@@ -116,19 +115,32 @@ module.exports = {
             ],
             '/myNotes/': [
                 {
-                    title: 'Bit 组件管理',   // 必要的
+                    title: 'git 相关',   // 必要的
                     path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 1,    // 可选的, 默认值是 1
                     children: [
                         {
-                            title: '介绍',
-                            path: '/web/bit/',
+                            title: '常用命令',
+                            path: '/myNotes/git/',
+                        },
+                    ]
+                },
+                {
+                    title: '树莓派',
+                    path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                        {
+                            title: '简介',
+                            path: '/myNotes/raspberryPi/',
                         },
                         {
-                            title: '安装',
-                            path: '/web/bit/install/',
+                            title: '安装系统',
+                            path: '/myNotes/raspberryPi/installSystem/',
                         },
+
                     ]
                 },
             ],
